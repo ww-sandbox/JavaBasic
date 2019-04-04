@@ -9,14 +9,6 @@ public class Vehicle {
 		this.year = year;
 	}
 
-	public String getModel() {
-		return model;
-	}
-
-	public String getYear() {
-		return year;
-	}
-
 	@Override
 	public String toString() {
 		return "Vehicle{" +
