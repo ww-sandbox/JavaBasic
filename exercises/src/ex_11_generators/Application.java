@@ -8,7 +8,7 @@ public class Application {
         List<Generator> generators = new ArrayList<>();
         generators.add(new AddressGenerator());
         generators.add(new NameGenerator(true));
-        generators.add(new PeselGenerator("1993", "08", "03", "128", true));
+        generators.add(new PeselGenerator("1863", "04", "03", "168", true));
 
         for(Generator generator : generators) {
             System.out.println(generator.generate());
