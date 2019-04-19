@@ -17,7 +17,7 @@ public class Throws {
     }
 
     public static void readFile() throws IOException {
-        ClassLoader cl = TryCatchFinally.class.getClassLoader();
+        ClassLoader cl = Throws.class.getClassLoader();
         File file = new File(cl.getResource("sample.txt").getFile());
         Path path = Paths.get(file.getPath());
 

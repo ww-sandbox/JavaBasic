@@ -17,10 +17,9 @@ public class Throw {
     }
 
     public static void readFile() throws FileReaderException {
-        ClassLoader cl = TryCatchFinally.class.getClassLoader();
+        ClassLoader cl = Throw.class.getClassLoader();
         File file = new File(cl.getResource("sample.txt").getFile());
         Path path = Paths.get(file.getPath());
-
 
         try {
             Stream<String> fl = Files.lines(path);

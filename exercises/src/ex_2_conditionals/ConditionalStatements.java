@@ -21,6 +21,10 @@ public class ConditionalStatements {
 			System.out.println("He is both terrible teacher and programmer!");
 		}
 
+		//Short if
+		String message = isGoodProgrammer ? "He is a great programmer!" : "He isn`t a good programmer at all...";
+		System.out.println(message);
+
 		/*
 		Exercise:
 		1. Declare three boolean variables:

@@ -7,6 +7,9 @@ public class Person {
 	public void sayHello(String name, String age) {
 		System.out.println("Hi! My name is " + name + " and I`m " + age + " years old!");
 	}
+	public void sayHello(String name, int age) {
+		System.out.println("Hi! My name is " + name + " and I`m " + age + " years old!");
+	}
 }
 
 class Aplication {
@@ -14,5 +17,6 @@ class Aplication {
 		Person person = new Person();
 		person.sayHello("Jack");
 		person.sayHello("Anna", "20");
+		person.sayHello("Anna", 20);
 	}
 }

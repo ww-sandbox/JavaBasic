@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 
 public class FileReader {
     public static Stream<String> readFile() {
-        ClassLoader cl = TryCatchFinally.class.getClassLoader();
+        ClassLoader cl = FileReader.class.getClassLoader();
         File file = new File(cl.getResource("./names.txt").getFile());
         Path path = Paths.get(file.getPath());
 
