@@ -1,6 +1,8 @@
 package ex_9_exceptions;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -10,18 +12,16 @@ import java.util.stream.Stream;
 public class Throws {
     public static void main(String[] args) {
         try {
-            readFile();
-        } catch (IOException e) {
+            System.out.println(readFile());
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
     }
 
-    public static void readFile() throws IOException {
-        ClassLoader cl = Throws.class.getClassLoader();
-        File file = new File(cl.getResource("sample.txt").getFile());
-        Path path = Paths.get(file.getPath());
+    public static String readFile() throws FileNotFoundException {
+        File file = new File("./src/sample.txt");
+        FileReader fr = new FileReader(file);
 
-        Stream<String> fl = Files.lines(path);
-        fl.forEach(System.out::println);
+        return fr.getEncoding();
     }
 }
