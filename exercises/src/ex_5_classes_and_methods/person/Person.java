@@ -1,4 +1,4 @@
-package ex_5_classes_and_methods;
+package ex_5_classes_and_methods.person;
 
 public class Person {
 	public void sayHello(String name) {
@@ -9,14 +9,5 @@ public class Person {
 	}
 	public void sayHello(String name, int age) {
 		System.out.println("Hi! My name is " + name + " and I`m " + age + " years old!");
-	}
-}
-
-class Aplication {
-	public static void main(String[] args) {
-		Person person = new Person();
-		person.sayHello("Jack");
-		person.sayHello("Anna", "20");
-		person.sayHello("Anna", 20);
 	}
 }

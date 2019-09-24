@@ -1,4 +1,4 @@
-package ex_7_polymorphism;
+package ex_7_polymorphism.ex_interface;
 
 public class App {
 	public static void main(String[] args) {
