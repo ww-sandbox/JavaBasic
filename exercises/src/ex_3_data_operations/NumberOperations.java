@@ -26,11 +26,19 @@ public class NumberOperations {
 		// Multiply doubles
 		double doublesMultiplyResult = numberThree * numberFour;
 
+		// Casting double to int
+		int castResult = (int) (numberFour + numberThree);
+
+		// More casting...
+		int moreCasting = (int) numberFour + numberOne;
+
 		System.out.println("Addition result: " + addResult);
 		System.out.println("Subtraction result: " + subtractResult);
 		System.out.println("Multiply result: " + multiplyResult);
 		System.out.println("Division result: " + divisionResult);
 		System.out.println("Modulo result: " + moduloResult);
 		System.out.println("Multiply doubles result: " + doublesMultiplyResult);
+		System.out.println("Casting result of adding two doubles: " + castResult);
+		System.out.println("Casting result of adding double to int: " + moreCasting);
 	}
 }

@@ -16,7 +16,7 @@ public class LogicOperators {
 			System.out.println(numberOne + " is not equal to " + numberTwo);
 		}
 
-		// > greated than
+		// > greater than
 		if (numberOne > numberTwo) {
 			System.out.println(numberOne + " is greater than " + numberTwo);
 		}
@@ -41,8 +41,18 @@ public class LogicOperators {
 			System.out.println(numberOne + " is less than " + numberThree + " OR " + "greater then or equal to " + numberTwo);
 		}
 
+		// | OR
+		if (numberOne < numberThree | numberThree >= numberTwo) {
+			System.out.println(numberOne + " is less than " + numberThree + " OR " + "greater then or equal to " + numberTwo);
+		}
+
 		// && AND
 		if (numberOne < numberThree && numberThree >= numberTwo) {
+			System.out.println(numberOne + " is less than " + numberThree + " AND " + "greater then or equal to " + numberTwo);
+		}
+
+		// & AND
+		if (numberOne < numberThree & numberThree >= numberTwo) {
 			System.out.println(numberOne + " is less than " + numberThree + " AND " + "greater then or equal to " + numberTwo);
 		}
 

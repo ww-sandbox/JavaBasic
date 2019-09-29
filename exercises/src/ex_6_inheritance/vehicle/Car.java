@@ -1,4 +1,4 @@
-package ex_6_inheritance;
+package ex_6_inheritance.vehicle;
 
 public class Car extends Vehicle {
 	private boolean hasCruiseControll;
@@ -13,12 +13,5 @@ public class Car extends Vehicle {
 		return "Car{" +
 			"hasCruiseControll=" + hasCruiseControll +
 			"} " + super.toString();
-	}
-}
-
-class Aplication {
-	public static void main(String[] args) {
-		Car car = new Car("VW", "2019", true);
-		System.out.println(car.toString());
 	}
 }

@@ -2,7 +2,8 @@ package ex_4_loops;
 
 public class Exercise {
 	public static void main(String[] args) {
-		int numbers[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+		int numbers[] =
+				{12, 46, 325, 6765, 77864, 321, 2, 5, 55, 787, 544, 234, 6523, 665, 55234, 65434, 23, 344, 52, 11, 125};
 
 		/*
 		1. Create a while loop which will print only even numbers from numbers[];

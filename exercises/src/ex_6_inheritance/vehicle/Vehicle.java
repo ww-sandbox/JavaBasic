@@ -1,4 +1,4 @@
-package ex_6_inheritance;
+package ex_6_inheritance.vehicle;
 
 public class Vehicle {
 	private String model;
