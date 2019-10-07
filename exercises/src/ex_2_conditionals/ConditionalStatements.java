@@ -6,6 +6,10 @@ public class ConditionalStatements {
 		boolean isGoodTeacher = false;
 
 		if (isGoodProgrammer) {
+			System.out.println("This is a good programmer");
+		}
+
+		if (isGoodProgrammer) {
 			// This code will execute if the isGoodProgrammer variable is true
 			System.out.println("This is a good programmer");
 		} else {

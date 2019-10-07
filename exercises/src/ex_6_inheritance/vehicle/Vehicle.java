@@ -4,7 +4,7 @@ public class Vehicle {
 	private String model;
 	private String year;
 
-	public Vehicle(String model, String year) {
+	Vehicle(String model, String year) {
 		this.model = model;
 		this.year = year;
 	}

@@ -3,45 +3,35 @@ package ex_10_collection;
 import java.util.ArrayList;
 import java.util.List;
 
-import static ex_10_collection.FileReader.readFile;
-
 public class ListExample {
 
     // Create ArrayList object
     private static List<String> names = new ArrayList<>();
 
     public static void main(String[] args) {
-        addNameToList("Zosia");
-        addNameToList("Tosia");
-        System.out.println(names + "\n");
+        names.add("Zosia");
+        names.add("Tosia");
+        names.add("Paweł");
+        names.add("Gaweł");
+        System.out.println(names);
 
+        names.remove(names.size() - 1);
+        System.out.println(names);
 
-        removeNameFromList(names.size() - 1);
-        System.out.println(names + "\n");
+        names.set(0, "Nowa Zosia");
+        System.out.println(names);
 
+        names.add(names.size(), "Nowy Element");
+        System.out.println(names);
 
-        addNamesFromFile();
-        System.out.println(names + "\n");
+        System.out.println(names.get(3));
 
+        names.forEach(name -> System.out.println("forEach: " + name));
 
-        removeAllNamesFromList();
+        names.clear();
         System.out.println(names);
     }
 
-    public static void addNameToList(String name) {
-        // Add something to the ArrayList collection
-        names.add(name);
-    }
-
-    public static void removeNameFromList(int index) {
-        // Remove something from list by it`s index
-        names.remove(index);
-    }
-
-
-    public static void addNamesFromFile() {
-        readFile().forEach(names::add);
-    }
 
     public static void removeAllNamesFromList() {
         // Remove everything from the ArrayList

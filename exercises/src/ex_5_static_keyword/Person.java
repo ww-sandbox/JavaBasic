@@ -1,6 +1,6 @@
 package ex_5_static_keyword;
 
-public class Person {
+class Person {
     private static int staticAge = 20;
     private int objectAge = 20;
 

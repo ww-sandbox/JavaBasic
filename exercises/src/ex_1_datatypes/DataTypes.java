@@ -8,6 +8,12 @@ public class DataTypes {
 		// Size: 16 bits
 		char letter = 'a';
 
+		// Size: 8 bits Range: -128 - 127 (inclusive)
+		byte byteNumber = 100;
+
+		// Size: 16 bits Range: -32,768 - 32767 (inclusive)
+		short shortNumber = 32_000;
+
 		// Size: 32 bits Range: -2,147,483,648 .. 2,147,483,647
 		int number = 123;
 

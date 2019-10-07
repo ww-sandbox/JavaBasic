@@ -21,6 +21,7 @@ public class Throw {
     public static String readFile() throws FileReaderException {
         File file = new File("./src/sample.txt");
         FileReader fr;
+
         try {
             fr = new FileReader(file);
         } catch (FileNotFoundException e) {

@@ -1,7 +1,7 @@
 package ex_7_polymorphism.ex_inheritance;
 
 public class Apple extends Fruit {
-    public Apple(String taste, String color) {
+    Apple(String taste, String color) {
         super(taste, color);
     }
 
