@@ -5,9 +5,17 @@ public class DoWhileLoop {
 		int numberOne = 5;
 
 		do {
+			System.out.println("numberOne : " + numberOne);
+			--numberOne;
+		} while (numberOne > 0);
+
+		System.out.println("----");
+		numberOne = 5;
+		do {
 			System.out.println("numberOne-- : " + numberOne);
 		} while (numberOne-- > 0);
 
+		System.out.println("----");
 		numberOne = 5;
 
 		do {

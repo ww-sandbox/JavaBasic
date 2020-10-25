@@ -13,19 +13,19 @@ public class Throw {
     public static void main(String[] args) {
         try {
             readFile();
-        } catch (FileReaderException e) {
+        } catch (FileReaderExceptionEmpty e) {
             System.out.println("Mój wyjątek! " + e);
         }
     }
 
-    public static String readFile() throws FileReaderException {
+    public static String readFile() throws FileReaderExceptionEmpty {
         File file = new File("./src/sample.txt");
         FileReader fr;
 
         try {
             fr = new FileReader(file);
         } catch (FileNotFoundException e) {
-            throw new FileReaderException();
+            throw new FileReaderExceptionEmpty();
         }
 
         return fr.getEncoding();

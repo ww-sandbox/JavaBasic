@@ -32,7 +32,7 @@ public class LogicOperators {
 		}
 
 		// <= less than or equal to
-		if (numberOne < numberTwo) {
+		if (numberOne <= numberTwo) {
 			System.out.println(numberOne + " is less than or equal to " + numberTwo);
 		}
 
@@ -64,7 +64,7 @@ public class LogicOperators {
 		 - int numberOne
 		 - int numberTwo
 		 - int number Three
-		2. Check an if statements to check if:
+		2. Write an if statements to check if:
 		 - String variables are equal
 		 - numberOne is gt or eq numberTwo OR numberOne is lt  numberTwo AND numberOne is not eq numberThree
 		 */

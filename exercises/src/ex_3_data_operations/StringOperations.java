@@ -6,6 +6,8 @@ public class StringOperations {
 		String stringTwo = "has many";
 		String stringThree = "cats";
 		String stringFour = "dogs";
+		String stringFive = "dogs";
+		int number = 10;
 		boolean hasManyCats = true;
 
 		// String Concatenation
@@ -19,6 +21,12 @@ public class StringOperations {
 		// https://www.geeksforgeeks.org/java-string-format-examples/
 		String formattedString = String.format("Jack has many " + "%1$s and %2$s", stringThree, stringFour);
 		System.out.println(formattedString);
+
+		if(stringFive == stringFour){
+			System.out.println("Strings equals");
+		}else {
+			System.out.println("String not equals");
+		}
 
 		/*
 		Exercise:

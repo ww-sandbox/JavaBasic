@@ -1,5 +1,7 @@
 package ex_4_loops;
 
+import java.util.Arrays;
+
 public class ForLoop {
 	public static void main(String[] args) {
 		int[] definedArray = {234, 123, 678, 4677, 2344, 111};
