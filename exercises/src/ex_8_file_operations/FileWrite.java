@@ -11,7 +11,7 @@ public class FileWrite {
     }
 
     public static void fileWrite() {
-        File file = new File ("./sample2.txt");
+        File file = new File ("./sample3.txt");
         FileWriter fw = null;
         try{
             fw = new FileWriter(file);
