@@ -19,7 +19,8 @@ public class StringOperations {
 
 		// String Formatting Examples
 		// https://www.geeksforgeeks.org/java-string-format-examples/
-		String formattedString = String.format("Jack has many " + "%1$s and %2$s", stringThree, stringFour);
+		String formattedString = String.format("Jack has many " + "%s and %s", stringThree, stringFour);
+//		String formattedString = String.format("Jack has many " + "%1$s and %2$s", stringThree, stringFour);
 		System.out.println(formattedString);
 
 		if(stringFive == stringFour){

@@ -1,4 +1,4 @@
-package ex_11_generators;
+package ex_12_generators;
 
 public class NameGenerator extends Generator {
     private String femaleFirstnames[] = {"Angie", "Jessica", "Sophia", "Beth"};

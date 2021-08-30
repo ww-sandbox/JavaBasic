@@ -1,4 +1,4 @@
-package ex_11_generators;
+package ex_12_generators;
 
 public class AddressGenerator extends Generator {
     String streets[] = {"White, Blue, Red, Green,Grey, Purple, Dark"};

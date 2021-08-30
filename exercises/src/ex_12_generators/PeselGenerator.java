@@ -1,4 +1,4 @@
-package ex_11_generators;
+package ex_12_generators;
 
 public class PeselGenerator extends Generator {
 
